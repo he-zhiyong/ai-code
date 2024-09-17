@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>计算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div id="formula" class="formula">0</div>
+            <div id="current" class="current">0</div>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="clearDisplay()">AC</button>
+            <button class="btn" onclick="inputOperator('+/-')">+/-</button>
+            <button class="btn" onclick="inputOperator('%')">%</button>
+            <button class="btn operator" onclick="inputOperator('/')">÷</button>
+            <button class="btn" onclick="inputNumber(7)">7</button>
+            <button class="btn" onclick="inputNumber(8)">8</button>
+            <button class="btn" onclick="inputNumber(9)">9</button>
+            <button class="btn operator" onclick="inputOperator('*')">×</button>
+            <button class="btn" onclick="inputNumber(4)">4</button>
+            <button class="btn" onclick="inputNumber(5)">5</button>
+            <button class="btn" onclick="inputNumber(6)">6</button>
+            <button class="btn operator" onclick="inputOperator('-')">-</button>
+            <button class="btn" onclick="inputNumber(1)">1</button>
+            <button class="btn" onclick="inputNumber(2)">2</button>
+            <button class="btn" onclick="inputNumber(3)">3</button>
+            <button class="btn operator" onclick="inputOperator('+')">+</button>
+            <button class="btn" onclick="inputNumber(0)">0</button>
+            <button class="btn" onclick="inputDecimal()">.</button>
+            <button class="btn" onclick="deleteLast()">DEL</button>
+            <button class="btn operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
